@@ -38,6 +38,7 @@ type v2ray struct {
 	} `json:"networkSettings"`
         VlessFlow string `json:"flow"`
         TlsSettings struct {
+                ServerPort    string `json:"server_port"`
                 Sni         string `json:"server_name"`
                 PrivateKey  string `json:"private_key"`
                 ShortId     string `json:"short_id"`
@@ -61,4 +62,6 @@ type user struct {
 	Id         int    `json:"id"`
 	Uuid       string `json:"uuid"`
 	SpeedLimit int    `json:"speed_limit"`
+        DeviceLimit int   `json:"device_limit"`
+        AliveIp    int    `json:"alive_ip"`
 }
