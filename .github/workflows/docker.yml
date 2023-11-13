@@ -16,7 +16,7 @@ on:
       - 'master'
 env:
   REGISTRY: ghcr.io
-  IMAGE_NAME: yuntk/xrayr
+  IMAGE_NAME: yuntko0/xrayr
 
 jobs:
   build:
